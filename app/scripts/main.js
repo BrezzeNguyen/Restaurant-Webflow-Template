@@ -15,3 +15,43 @@
 //     ],
 //   });
 // });
+
+
+// Show time active
+
+const iconTime = document.querySelector(".front-item-icon--time");
+const timeline = document.querySelector(".front-timeline");
+const activeClass = "is-active";
+iconTime && iconTime.addEventListener("click",function () {
+    timeline.classList.add(activeClass);
+});
+    
+window.addEventListener("click", function (e){
+    if (!timeline.contains(e.target) && !e.target.matches(".front-item-icon--time"))
+      timeline.classList.remove("is-active");
+    });
+
+
+const iconToggle = document.querySelector(".front-item-icon--toggle");
+const toggle = document.querySelector(".front-toggle");
+iconToggle && iconToggle.addEventListener("click",function () {
+    toggle.classList.add(activeClass);
+});
+    
+window.addEventListener("click", function (e){
+    if (!toggle.contains(e.target) && !e.target.matches(".front-item-icon--toggle"))
+    toggle.classList.remove("is-active");
+    });
+
+const iconCart = document.querySelector(".front-item-icon--cart");
+const Cart = document.querySelector(".front-cart");
+const background = document.getElementsByClassName(".front")
+iconCart && iconCart.addEventListener("click",function () {
+    Cart.classList.add(activeClass);
+    background.style.backgroundColor = "red"
+});
+    
+window.addEventListener("click", function (e){
+    if (!Cart.contains(e.target) && !e.target.matches(".front-item-icon--cart"))
+    Cart.classList.remove("is-active");
+    });
