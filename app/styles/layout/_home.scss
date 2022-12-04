@@ -24,17 +24,14 @@
     flex-wrap: wrap;
   }
 
-  &-branch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &-name {
     font-size: 20rem;
     margin-bottom: 3.2rem;
-    span {
-      font-family: $secondary-font;
-      color: $secondary-color;
-      font-size: 8rem;
-    }
+  }
+  &-branch {
+    font-family: $secondary-font;
+    color: $secondary-color;
+    font-size: 8rem;
   }
 
   &-desc {
@@ -49,7 +46,9 @@
     margin: 2rem auto 7rem;
     background-color: #fff;
     border-radius: 10rem;
+    // position: fixed;
   }
+  
 
   &-list {
     display: flex;

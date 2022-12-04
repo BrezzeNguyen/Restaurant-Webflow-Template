@@ -53,23 +53,13 @@ body {
     flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .front-branch {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .front-name {
     font-size: 20rem;
     margin-bottom: 3.2rem; }
-    .front-branch span {
-      font-family: "Caveat";
-      color: #FACE8D;
-      font-size: 8rem; }
+  .front-branch {
+    font-family: "Caveat";
+    color: #FACE8D;
+    font-size: 8rem; }
   .front-desc {
     font-size: 2rem;
     font-weight: normal;
@@ -235,3 +225,129 @@ body {
       font-size: 2rem; }
     .front-list h3 {
       display: none; } }
+
+.menu {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center/cover;
+  padding: 8rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+  .menu-background, .menu-list {
+    width: 50%;
+    height: 100%; }
+  .menu-background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .menu-logo {
+    margin-top: 5rem;
+    font-size: 3rem; }
+  .menu-branch {
+    margin-top: 20rem;
+    font-size: 7rem;
+    font-family: "Caveat";
+    color: #FACE8D; }
+  .menu-name {
+    margin-top: 2rem;
+    font-size: 9rem; }
+  .menu-list {
+    background-color: #000;
+    padding: 0 7rem; }
+  .menu-header {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center; }
+    .menu-header-name:not(:last-child) {
+      margin-right: 5rem; }
+    .menu-header-name:hover {
+      color: #FACE8D;
+      cursor: pointer; }
+  .menu-items {
+    margin-top: 3rem; }
+  .menu-title {
+    font-size: 4rem;
+    font-family: "Caveat";
+    color: #FACE8D;
+    margin-bottom: 6rem; }
+  .menu-info {
+    margin-bottom: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .menu-item-img {
+    width: 10rem;
+    height: 8rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 2rem; }
+  .menu-item-info {
+    margin-right: 15rem; }
+  .menu-item-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 2; }
+  .menu-item-name {
+    margin-right: 1.5rem;
+    font-size: 3rem; }
+  .menu-item-icon {
+    color: #FACE8D; }
+  .menu-item-desc {
+    font-size: 1.6rem; }
