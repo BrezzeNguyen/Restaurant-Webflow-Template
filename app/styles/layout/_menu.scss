@@ -9,6 +9,7 @@
   align-items: stretch;
   justify-content: flex-start;
   flex-wrap: nowrap;
+  position: relative;
     &-background,
     &-list {
       width: 50%;
@@ -23,6 +24,7 @@
     }
 
     &-logo {
+      justify-content: center;
       margin-top: 5rem;
       font-size: 3rem;
     }
@@ -42,6 +44,12 @@
     &-list {
       background-color: #000;
       padding: 0 7rem;
+      overflow-y: scroll;
+
+    }
+
+    &-list::-webkit-scrollbar {
+      width: 1px;
     }
 
     &-header {
@@ -64,20 +72,30 @@
     &-items {
       margin-top: 3rem;
     }
+
+    &-item:not(:last-child) {
+      margin-bottom: 10rem;
+    }
     
     &-title {
       font-size: 4rem;
       font-family: $secondary-font; 
       color: $secondary-color;
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
     }
     
     &-info {
-      margin-bottom: 2.5em;
+      padding: 2rem;
+      margin-bottom: 2rem;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid $secondary-color;
+        border-radius: 1rem;
+      }
     }
 
     &-item-img {
@@ -88,8 +106,12 @@
       margin-right: 2rem;
     }
 
-    &-item-info {  
-      margin-right: 15rem;
+    // &-item-info {  
+    //   margin-right: 15rem;
+    // }
+
+    &-item-number {
+      margin-left: auto;
     }
 
     &-item-header {
@@ -111,6 +133,124 @@
 
     &-item-desc {
       font-size: 1.6rem;
+    }
+
+    &-footer-list {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      margin-top: 5rem;
+
+    }
+
+    &-footer-logo {
+      font-size: 3rem;
+    }
+
+    &-footer-title {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    &-footer-name{
+      margin-top: 3rem;
+    }
+    
+    &-footer-desc:not(:last-child) {
+      line-height: 2.5;
+    }
+    
+    &-footer-desc {
+      cursor: pointer;
+      span {
+        color: $secondary-color;
+      }
+    }
+
+    @include maxWidth(1024px) {
+      display: block;
+
+      &-background,
+      &-list {
+        width: 100%;
+        height: 100%;
+      }
+
+      &-branch {
+        margin-top: 50rem;
+      }
+
+      &-header {
+        margin-top: 5rem;
+      }
+
+    }
+
+    @include maxWidth(768px) {
+
+      &-branch {
+        margin-top: 30rem;
+      }
+
+    }
+
+    @include maxWidth(415px) {
+
+      &-branch {
+        margin-top: 25rem;
+        font-size: 5rem;
+      }
+
+      &-name {
+        font-size: 8rem;
+      }
+
+      &-list {
+        padding: 0 3rem;
+      }
+
+      &-header {
+        justify-content: space-between;
+        margin-right: 0;
+      }
+
+      &-header-name:not(:last-child) {
+       margin-right: 0;
+      }
+
+      &-info {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &-item-info {
+        margin-bottom: 2rem;
+      }
+
+      &-item-header {
+        justify-content: center;
+      }
+
+      &-item-desc {
+        text-align: center;
+      }
+
+      &-item-number {
+        margin-left: 0;
+      }
+
+      &-footer-list {
+        margin-bottom: 5rem;
+      }
+
+      &-footer-item:not(:last-child) {
+        margin-right: 2rem;
+      }
     }
 
 }

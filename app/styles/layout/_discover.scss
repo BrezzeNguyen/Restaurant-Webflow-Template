@@ -1,0 +1,16 @@
+.discover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+// .front {
+//     &-center:not(:first-child) {
+//         visibility: hidden;
+//     }
+// }
+
+.slick-arrow {
+    display: none;
+}
