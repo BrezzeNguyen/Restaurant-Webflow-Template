@@ -63,19 +63,4 @@ window.addEventListener("click", function (e) {
     Cart.classList.remove("is-active");
 });
 
-$(".discover").slick({
-  speed: 100,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: false,
-  nextArrow:false
-});
 
-// $(".discover").ready(function(){
-//     $('.slider').slick({
-//         autoplay:true,
-//         arrows: true,
-//         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-//         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
-//     });
-// });

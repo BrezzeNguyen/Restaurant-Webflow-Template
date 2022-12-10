@@ -197,6 +197,10 @@
         margin-top: 30rem;
       }
 
+      &-list {
+        display: none;
+      }
+
     }
 
     @include maxWidth(415px) {
@@ -212,6 +216,7 @@
 
       &-list {
         padding: 0 3rem;
+        display: none;
       }
 
       &-header {
